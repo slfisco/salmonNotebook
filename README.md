@@ -2,4 +2,4 @@
 
 A jupyter notebook that pulls salmon survey data from epicollect5 api, displays category counts and plots
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/slfisco/salmonNotebook/2020survey?filepath=salmonNotebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/slfisco/salmonNotebook/blob/2020survey/salmonNotebook.ipynb)
