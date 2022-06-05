@@ -40,5 +40,18 @@
         <h4>generated {{reportGenTime}}</h4>
         <h3>Survey Totals</h3>
         {{surveyTotals}}
+		<h3>Yearly Totals</h3>
+		{{yearlyTotalsTable}}
+		{% if reddsTable is not none %}   
+			<h3>Redds by location</h3>
+			{{reddsTable}}
+		{% endif %}
+		{{countPlot}}
+		{{yearByYearCountPlot}}
+		{{mostRecentScatterMap}}
+		{{yearScatterMap}}
+		{% for pieChart in pieCharts %}
+			{{pieChart}}
+		{% endfor %}
 	</body>
 </html>
