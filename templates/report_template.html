@@ -39,12 +39,18 @@
         <h2>CWCAP Salmon Survey Report</h2>
         <h4>generated {{reportGenTime}}</h4>
         <h3>Survey Totals</h3>
+		<div style="overflow-x:auto;">
         {{surveyTotals}}
+		</div>
 		<h3>Yearly Totals</h3>
+		<div style="overflow-x:auto;">
 		{{yearlyTotalsTable}}
+		</div>
 		{% if reddsTable is not none %}   
 			<h3>Redds by location</h3>
+			<div style="overflow-x:auto;">
 			{{reddsTable}}
+			</div>
 		{% endif %}
 		{{countPlot}}
 		{{yearByYearCountPlot}}
