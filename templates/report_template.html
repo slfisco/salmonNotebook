@@ -1,14 +1,10 @@
 <html>
     <head>
-		<style>body {
-			font-family: Arial, Helvetica, sans-serif;
-			border-collapse: collapse;
-			width: 100%;
-			}
-			
+		<style>
 			table {
 			border-collapse:collapse;
 			caption-side: bottom;
+			font-family: Arial, Helvetica, sans-serif;
 			}
 			
 			caption {text-align:left;}
@@ -38,17 +34,17 @@
 		<img src="https://www.carkeekwatershed.org/wp-content/uploads/CWCAPlogo-1.png" width="213" height="72">
         <h2>CWCAP Salmon Survey Report</h2>
         <h4>generated {{reportGenTime}}</h4>
-        <h3>Survey Totals</h3>
 		<div style="overflow-x:auto;">
+		<h3>Survey Totals</h3>
         {{surveyTotals}}
 		</div>
-		<h3>Yearly Totals</h3>
 		<div style="overflow-x:auto;">
+		<h3>Yearly Totals</h3>
 		{{yearlyTotalsTable}}
 		</div>
 		{% if reddsTable is not none %}   
-			<h3>Redds by location</h3>
 			<div style="overflow-x:auto;">
+			<h3>Redds by location</h3>
 			{{reddsTable}}
 			</div>
 		{% endif %}
@@ -62,6 +58,10 @@
 		<div>
 		{{chumSexPlot}}
 		{{cohoSexPlot}}
+		</div>
+		<div style="overflow-x:auto;">
+		<h3>Mean Length and Width</h3>
+		{{lengthWidthTable}}
 		</div>
 	</body>
 </html>
